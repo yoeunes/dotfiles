@@ -111,6 +111,7 @@ alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.p
 
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
+
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
