@@ -17,10 +17,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "MacBook Pro Younes"
-sudo scutil --set HostName "MacBook Pro Younes"
-sudo scutil --set LocalHostName "MacBook Pro Younes"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook Pro Younes"
+sudo scutil --set ComputerName "Younes"
+sudo scutil --set HostName "Younes"
+sudo scutil --set LocalHostName "Younes"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Younes"
 
 # Disable the sound effects on boot
 # sudo nvram SystemAudioVolume=" "
@@ -708,7 +708,7 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Activity Monitor                                                            #
