@@ -275,11 +275,11 @@ export PATH=/usr/local/bin:$PATH
 
 #if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
-eval $(ssh-agent -s)
+# eval $(ssh-agent -s)
 #eval $(dinghy env)
 
-ssh-add -K ~/.ssh/id_rsa
-ssh-add -K ~/.ssh/github-elkenzi
+# ssh-add -K ~/.ssh/id_rsa
+# ssh-add -K ~/.ssh/github-elkenzi
 
 plugins=(
   git
