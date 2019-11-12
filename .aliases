@@ -147,3 +147,223 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias artisan="php artisan"
+alias getweb="wget --recursive --no-clobber --page-requisites --html-extension --convert-links --no-parent"
+
+alias code="cd ~/code/"
+alias home="cd ~/code/tamtam/home"
+alias apittp="cd ~/code/tamtam/apittp"
+alias rentimo="cd ~/code/tamtam/rentimo"
+alias boyacars="cd ~/code/tamtam/boyacars"
+
+alias cuat='git checkout origin/uat'
+alias cdiff='git diff media2rc..origin/uat --'
+
+alias api="cd ~/code/tamtam/apittp/src/TTP/ApiBundle"
+alias blog="cd ~/code/tamtam/apittp/src/TTP/BlogBundle"
+alias event="cd ~/code/tamtam/apittp/src/TTP/EventBundle"
+alias mailer="cd ~/code/tamtam/apittp/src/TTP/MailerBundle"
+alias mailing="cd ~/code/tamtam/apittp/src/TTP/MailingBundle"
+alias payment="cd ~/code/tamtam/apittp/src/TTP/PaymentBundle"
+alias rbac="cd ~/code/tamtam/apittp/src/TTP/RbacBundle"
+alias survey="cd ~/code/tamtam/apittp/src/TTP/SurveyBundle"
+alias talk="cd ~/code/tamtam/apittp/src/TTP/TalkBundle"
+alias wtb="cd ~/code/tamtam/apittp/src/TTP/WtbBundle"
+alias media="cd ~/code/tamtam/apittp/src/TTP/MediaBundle"
+alias billing="cd ~/code/tamtam/apittp/src/TTP/BillingBundle"
+alias membership="cd ~/code/tamtam/apittp/src/TTP/MembershipBundle"
+alias data="cd ~/code/tamtam/apittp/src/TTP/DataBundle"
+
+alias update="composer global update; npm update -g;"
+alias hist="clear && history | sed 's/.[ ]*.[0-9]*.[ ]*//' | sort -u | uniq"
+alias histg="clear && history | sed 's/.[ ]*.[0-9]*.[ ]*//' | sort -u | uniq | grep -i"
+
+alias aliases='atom -a ~/.bash_aliases'
+alias save_aliases='source ~/.bash_aliases && source ~/.zshrc'
+alias save_zshrc='source ~/.zshrc'
+
+alias gitatom='git config --global rerere.enabled 1; git config --add rebase.instructionFormat "(%an <%ae>) %s"; git config --global core.editor "atom --wait"'
+alias gitnano='git config --global core.editor "nano"'
+
+#alias phpcs="vendor/bin/phpcs"
+#alias phpcbf="vendor/bin/phpcbf"
+alias phpmd='php -d memory_limit=-1 vendor/bin/phpmd'
+alias phpcpd="php -d memory_limit=-1 vendor/bin/phpcpd"
+
+alias aphpcpd='php -d memory_limit=-1 vendor/bin/phpcpd --names-exclude="*Test.php" src/'
+alias aphpmd='php -d memory_limit=-1 vendor/bin/phpmd src/TTP/ApiBundle --exclude "Tests" text unusedcode,controversial'
+
+alias phpunit="clear && vendor/bin/phpunit"
+alias sphpunit="clear && vendor/bin/simple-phpunit"
+alias mphpunit="clear && ../../../vendor/bin/phpunit"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias hostfile="sudo atom -a /etc/hosts"
+
+alias dsu='apittp && bin/console doctrine:schema:update'
+alias nah='git reset --hard;git clean -df'
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias reloadcli="source $HOME/.zshrc"
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias scopy="rsync -avz -P -e 'ssh'"
+alias mampmysql="/Applications/MAMP/Library/bin/mysql -u root -proot"
+
+alias wip="git add .;git commit -am 'wip'"
+alias clearapilogs='sudo rm -rf /Users/yoeunes/code/tamtam/apittp/var/logs/*'
+alias clearhomelogs=': > storage/logs/laravel.log'
+
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias cat='bat'
+alias top="sudo htop"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules,vendor"
+alias help='tldr'
+
+alias storageprod='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/prod-server.pem"  ec2-user@api2.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
+alias storageuat='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/uat-server.pem"  ec2-user@uat2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
+alias storagedev='rsync -r --info=progress2 --stats --ignore-existing -a -h -e "ssh -i ~/.ssh/dev-server.pem"  ec2-user@dev2.api.tamtam.pro:/home/ec2-user/plateforme/api/storage ~/code/tamtam/apittp/web'
+
+alias ciprod='git commit --allow-empty -m "[ci:base=splitup-prod] and [ci:env=prod]"'
+alias ciuat='git commit --allow-empty -m "[ci:base=splitup-uat] and [ci:env=uat]"'
+alias cidev='git commit --allow-empty -m "[ci:base=splitup] and [ci:env=develop]"'
+alias circ='git commit --allow-empty -m "[ci:base=rc] and [ci:env=rc]"'
+
+alias sshprod='ssh -i ~/.ssh/prod-server.pem ec2-user@52.16.83.192'
+alias sshdev='ssh -i ~/.ssh/dev-server.pem ec2-user@dev2.api.tamtam.pro'
+alias sshuat='ssh -i ~/.ssh/uat-server.pem ec2-user@uat2.api.tamtam.pro'
+alias sshrc='ssh -i ~/.ssh/rc-server.pem ec2-user@rc.api.tamtam.pro'
+alias triocom="ssh triocom"
+
+alias resup="sudo supervisorctl -c /usr/local/etc/supervisord.ini reread && sudo supervisorctl -c /usr/local/etc/supervisord.ini update"
+alias supconf="open /usr/local/etc/supervisor.d"
+
+alias subinit='git submodule update --init --recursive'
+alias subnah="git submodule foreach --recursive 'git reset --hard;git clean -df || :'"
+alias subcheckout='git submodule foreach --recursive git checkout'
+alias subpull='git submodule foreach --recursive git pull origin'
+alias subfetch='git submodule foreach --recursive git fetch'
+
+alias splitup='apittp && subinit && git checkout splitup && subinit && subcheckout develop'
+alias splitupuat='apittp && subinit && git checkout splitup-uat && subinit && subcheckout uat'
+alias splitupprod='apittp && subinit && git checkout splitup-prod && subinit && subcheckout prod'
+alias splituprc='apittp && subinit && git checkout rc && subinit && subcheckout rc'
+
+alias domains="cd /Users/yoeunes/code/yoeunes/domainnames && printf '\33c\e[3J' && ./domains && cd -"
+alias clears="printf '\33c\e[3J'"
+
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+export EDITOR=nano
+export SYMFONY_ENV=local
+export SYMFONY_DEBUG=true
+export GPG_TTY=$(tty)
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+export ZSH_THEME="nicoulaj"
+export LC_ALL='en_US.UTF-8'
+export LANG='en_US.UTF-8'
+
+export TTP_DATABASE_PORT=33060
+
+#export JENV_ROOT="/usr/local/Cellar/jenv/"
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
+export PATH="$HOME/.symfony/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
+
+#if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+eval $(ssh-agent -s)
+#eval $(dinghy env)
+
+ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/github-elkenzi
+
+plugins=(
+  git
+  ssh-agent
+  zsh_reload
+  colored-man-pages
+  symfony
+  laravel
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
+listening() {
+    if [ $# -eq 0 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P
+    elif [ $# -eq 1 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+    else
+        echo "Usage: listening [pattern]"
+    fi
+}
+
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
+function laradock() {
+    ( cd ~/code/tamtam/laradock && docker-compose $* )
+}
+
+function clone() {
+    ( hub clone $1 $1 )
+}
+
+function unit() {
+  clear
+
+  currentDirectory=$(pwd)
+
+  cd "/Users/yoeunes/code/tamtam/apittp"
+
+  ./vendor/bin/phpunit "$currentDirectory/$1"
+
+  cd "$currentDirectory"
+}
+
+function apidiff() {
+   ( git diff --color-words --no-index /Users/yoeunes/code/tamtam/apittp/$1 /Users/yoeunes/code/bruno-apittp/$1 )
+}
+
+function datesync() {
+    sudo service ntp stop && sudo ntpd -gq && sudo service ntp start
+}
+
+function gitusername() {
+  username=$1
+  email=$2
+
+  git config --global user.name "$username"
+  git config --global user.email "$email"
+
+  if [ ! -d .git ]; then
+    return 1
+  fi;
+
+  git config user.name "$username"
+  git config user.email "$email"
+
+  if [[ $(git submodule status) ]]; then
+      git submodule foreach --recursive git config user.name "$username"
+      git submodule foreach --recursive git config user.email "$email"
+  fi
+}
+
+alias gityoeunes='gitusername "Younes Khoubza" "younes.khoubza@gmail.com"'
+alias gitelkenzi='gitusername "Mohamed Amine EL KENZI" "elkenziamine@gmail.com"'
+
+function signmycommits() {
+  git filter-branch --commit-filter 'if [ "$GIT_COMMITTER_EMAIL" = "younes.khoubza@gmail.com" ];
+  then git commit-tree -S "$@";
+  else git commit-tree "$@";
+  fi' HEAD
+}
+
+composer-link() {
+    composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
+}
