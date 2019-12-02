@@ -269,7 +269,7 @@ export LANG='en_US.UTF-8'
 export TTP_DATABASE_PORT=33060
 
 #export JENV_ROOT="/usr/local/Cellar/jenv/"
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+# export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export PATH="$HOME/.symfony/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 
