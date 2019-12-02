@@ -30,7 +30,7 @@ brew 'woff2'
 brew 'grep'
 brew 'openssh'
 brew 'screen'
-# brew 'php'
+# 'php'
 brew 'gmp'
 
 brew 'gnupg'
