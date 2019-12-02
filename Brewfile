@@ -4,6 +4,7 @@ tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'bramstein/webfonttools'
 
 # Binaries
 brew 'awscli'
@@ -15,15 +16,36 @@ brew 'gnupg2'
 brew 'grep'
 brew 'httpie'
 brew 'hub'
-brew 'mackup'
-brew 'mas' # Mac App Store manager
+# brew 'mackup'
+# brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'trash' # Manage the Trash bin
+# brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 
-# Development
+brew 'sfnt2woff'
+brew 'sfnt2woff-zopfli'
+brew 'woff2'
+
+brew 'grep'
+brew 'openssh'
+brew 'screen'
 brew 'php'
+brew 'gmp'
+
+brew 'gnupg'
+brew 'wget'
+
+brew 'coreutils'
+brew 'moreutils'
+brew 'findutils'
+brew 'gnu-sed'
+
+brew 'bash'
+brew 'bash-completion2'
+
+# Development
+# brew 'php'
 brew 'php@7.2'
 brew 'composer'
 # brew 'mysql'
@@ -49,13 +71,13 @@ cask 'java'
 # cask 'mysqlworkbench'
 # cask 'notion'
 # cask 'phpstorm'
-cask 'skype'
+# cask 'skype'
 # cask 'slack'
 # cask 'sublime-text'
 # cask 'tableplus'
 # cask 'telegram-desktop'
 # cask 'tor-browser'
-cask 'transmission'
+# cask 'transmission'
 # cask 'transmit'
 # cask 'vagrant'
 # cask 'virtualbox' # Might need to allow access in Security settings
