@@ -82,6 +82,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 
 # User configuration
 

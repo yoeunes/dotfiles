@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "303713f2ccbb10ebfd7ba8d78b907acbf26ff5b5"
+        "revision": "b22564e27df82550766672f964b10bab107203c8"
       },
       "homebrew/cask-eid": {
         "revision": "248e26a85a5e903fd134954ec82138cfe35eb5ce"
@@ -11,7 +11,7 @@
         "revision": "fa725d59e23f22e371e6c0ba0eab67b43cb59d72"
       },
       "homebrew/cask-versions": {
-        "revision": "6ad9129803b33fb76dcc56d3fdd99284c4bc4d04"
+        "revision": "3112b27247e1079734e5aa103bd447699e0d6f09"
       },
       "homebrew/bundle": {
         "revision": "aced1252de5657a0a24313fc321cb5eb406f4725"
@@ -619,7 +619,7 @@
       "Ubuntu 18.04.3 LTS (bionic)": {
         "HOMEBREW_VERSION": "2.2.0",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
-        "Homebrew/linuxbrew-core": "e92750cb8eab4a224b300375679724e3fdfcbc32",
+        "Homebrew/linuxbrew-core": "5df65d29b7abaf6fa6d6f038add374d81b7ae65b",
         "GCC": "5.5.0"
       }
     }
