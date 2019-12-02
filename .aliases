@@ -278,6 +278,8 @@ export PATH=/usr/local/bin:$PATH
 # eval $(ssh-agent -s)
 #eval $(dinghy env)
 
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 # ssh-add -K ~/.ssh/id_rsa
 # ssh-add -K ~/.ssh/github-elkenzi
 
